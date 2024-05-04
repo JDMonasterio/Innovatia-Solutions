@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatia Solutions</title>
+</head>
+
+<body>
+<header class="header-area">
+<div class="navbar-area">
+    <div class="container">
+    <nav class="site-navbar">
+        <!-- site logo -->
+        <a href="#home" class="site-logo">Innovatia Solutions</a>
+
+        <!-- site menu/nav -->
+        <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./pages/productos.html">Productos</a></li>
+        <li><a href="./pages/nosotros.html">Nosotros</a></li>
+        <li><a href="./pages/contactos.html">Contactos</a></li>
+        <li><a href="./pages/ayuda.html">Ayuda</a></li>
+        </ul>
+
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+        <span></span>
+        </button>
+    </nav>
+    </div>
+</div>
+<!-- navbar-area end -->
+
+<div class="intro-area">
+    <div class="container">
+    <h2>Innovatia Solutions</h2>
+    <p >Innovatia Solutions es una empresa líder en el sector de servicios eléctricos,  dedicada a proporcionar soluciones innovadoras y de alta calidad en el ámbito de la electricidad.  Con un enfoque en la excelencia técnica y el servicio al cliente, Innovatia se ha destacado como un socio confiable para una variedad de necesidades eléctricas,  desde instalaciones residenciales hasta proyectos comerciales e industriales.</p>
+    </div>
+</div>
+
+<script>// define all UI variable
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.site-navbar ul');
+    const navLinks = document.querySelectorAll('.site-navbar a');
+    
+    // load all event listners
+    allEventListners();
+    
+    // functions of all event listners
+    function allEventListners() {
+      // toggler icon click event
+    navToggler.addEventListener('click', togglerClick);
+      // nav links click event
+    navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+    }
+    
+    // togglerClick function
+    function togglerClick() {
+    navToggler.classList.toggle('toggler-open');
+    navMenu.classList.toggle('open');
+    }
+    
+    // navLinkClick function
+    function navLinkClick() {
+    if(navMenu.classList.contains('open')) {
+        navToggler.click();
+    }
+    }</script>
+    
+</header>
+
+<section id="footer">
+    <div class="main-footer">
+    <div class="logoinfo" data-aos="fade-up">
+        <h2>Innovatia Solutions</h2>
+        <div class="contact-details">
+        <h1>Contactos</h1>
+        <li>
+            <div class="fa fa-phone"></div><a href="tel:+56">+569 66758469</a>
+        </li>
+        <li>
+            <div class="fa fa-envelope"></div><a href="mailto:yourmail@gmail.com">InnovatiaSolutions@gmail.com</a>
+        </li>
+        </li>
+        </div>
+    </div>
+    <div class="com " data-aos="fade-up">
+        <h1>About</h1>
+        <ul>
+        <li><a href="./../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./contactos.html">Contactos</a></li>
+        <li><a href="./ayuda.html">Ayuda</a></li>
+        </ul>
+    </div>
+    <div class="info" data-aos="fade-up">
+        <h1>Redes Sociales</h1>
+        <div class="sociallogos">
+        <div class="logobox">
+            <i></i>
+            <a href="#" class="fa-brands fa-facebook"></a>
+            <a href="#" class="fa-brands fa-linkedin"></a>
+            <a href="#" class="fa-brands fa-youtube"></a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer>©Innovatia Solutions 2024  todos los derechos reservados. </footer>
+</body>
+</html>

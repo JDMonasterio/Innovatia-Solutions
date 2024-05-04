@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatia Solutions|Productos</title>
+</head>
+
+<body>
+<header class="header-area">
+<div class="navbar-area">
+    <div class="container">
+    <nav class="site-navbar">
+        <!-- site logo -->
+        <a href="#home" class="site-logo">Innovatia Solutions</a>
+
+        <!-- site menu/nav -->
+        <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./../pages/productos.html">Productos</a></li>
+        <li><a href="./../pages/nosotros.html">Nosotros</a></li>
+        <li><a href="./../pages/contactos.html">Contactos</a></li>
+        <li><a href="./../pages/ayuda.html">Ayuda</a></li>
+        </ul>
+
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+        <span></span>
+        </button>
+    </nav>
+    </div>
+</div><!-- navbar-area end -->
+
+<script>// define all UI variable
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.site-navbar ul');
+    const navLinks = document.querySelectorAll('.site-navbar a');
+    
+    // load all event listners
+    allEventListners();
+    
+    // functions of all event listners
+    function allEventListners() {
+      // toggler icon click event
+    navToggler.addEventListener('click', togglerClick);
+      // nav links click event
+    navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+    }
+    
+    // togglerClick function
+    function togglerClick() {
+    navToggler.classList.toggle('toggler-open');
+    navMenu.classList.toggle('open');
+    }
+    
+    // navLinkClick function
+    function navLinkClick() {
+    if(navMenu.classList.contains('open')) {
+        navToggler.click();
+    }
+    }</script>
+    
+    
+</header>
+<main>
+    <div class="container-main">
+        <div class="custom-card">
+        <div class="img-box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4XLbDGDLGmI73VTcJPet7LSShYtadg1R7R-CfhO_xw&s"></div>
+        <div class="custom-content">
+            <h2>Instalacion de Panel Electrico</h2>
+            <p>Garantizamos una instalación segura y eficiente de paneles eléctricos. Nuestro equipo experto monta el panel, lo conecta a la fuente principal y distribuye la energía según tus necesidades. Cumplimos con todos los códigos eléctricos locales para tu seguridad y tranquilidad</p>
+            <a href="">Cotizar Aqui!</a>
+        </div>
+        </div>
+    
+        <div class="custom-card">
+        <div class="img-box"><img src="https://previews.123rf.com/images/thirawat/thirawat1307/thirawat130700056/20737941-electricistas-son-la-instalaci%C3%B3n-de-l%C3%ADneas-el%C3%A9ctricas-de-alta-tensi%C3%B3n.jpg"></div>
+        <div class="custom-content">
+            <h2>Instalacion de linea Electrica</h2>
+            <p>Instalamos líneas eléctricas con seguridad y eficiencia, cumpliendo con los más altos estándares de calidad y códigos locales</p>
+            <a href="">Cotizar Aqui!</a>
+        </div>
+        </div>
+    
+        <div class="custom-card">
+        <div class="img-box"><img src="https://blog.infraspeak.com/wp-content/uploads/2021/02/manutencao-eletrica.jpg"></div>
+        <div class="custom-content">
+            <h2>Mantencion Electrica</h2>
+            <p>Proporcionamos mantenimiento eléctrico completo y seguro para tus instalaciones. Nuestro equipo especializado garantiza un funcionamiento óptimo según los estándares de seguridad y normativas vigentes</p>
+            <a href="">Cotizar Aqui!</a>
+        </div>
+        </div>
+    </div>
+</main>
+<section id="footer">
+    <div class="main-footer">
+    <div class="logoinfo" data-aos="fade-up">
+        <h2>Innovatia Solutions</h2>
+        <div class="contact-details">
+        <h1>Contactos</h1>
+        <li>
+            <div class="fa fa-phone"></div><a href="tel:+56">+569 66758469</a>
+        </li>
+        <li>
+            <div class="fa fa-envelope"></div><a href="mailto:yourmail@gmail.com">InnovatiaSolutions@gmail.com</a>
+        </li>
+        </li>
+        </div>
+    </div>
+    <div class="com " data-aos="fade-up">
+        <h1>About</h1>
+        <ul>
+        <li><a href="./../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./contactos.html">Contactos</a></li>
+        <li><a href="./ayuda.html">Ayuda</a></li>
+        </ul>
+    </div>
+    <div class="info" data-aos="fade-up">
+        <h1>Redes Sociales</h1>
+        <div class="sociallogos">
+        <div class="logobox">
+            <i></i>
+            <a href="#" class="fa-brands fa-facebook"></a>
+            <a href="#" class="fa-brands fa-linkedin"></a>
+            <a href="#" class="fa-brands fa-youtube"></a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer>©Innovatia Solutions 2024  todos los derechos reservados. </footer>
+</body>
+</html>

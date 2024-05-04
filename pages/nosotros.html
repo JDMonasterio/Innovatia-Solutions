@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c32adfdcda.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovatia Solutions</title>
+</head>
+
+<body class="body-nosotros">
+<header class="header-area">
+<div class="navbar-area">
+    <div class="container">
+    <nav class="site-navbar">
+        <!-- site logo -->
+        <a href="#home" class="site-logo">Innovatia Solutions</a>
+
+        <!-- site menu/nav -->
+        <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./contactos.html">Contactos</a></li>
+        <li><a href="./ayuda.html">Ayuda</a></li>
+        </ul>
+
+        <!-- nav-toggler for mobile version only -->
+        <button class="nav-toggler">
+        <span></span>
+        </button>
+    </nav>
+    </div>
+</div>
+<!-- navbar-area end -->
+
+
+<script>// define all UI variable
+    const navToggler = document.querySelector('.nav-toggler');
+    const navMenu = document.querySelector('.site-navbar ul');
+    const navLinks = document.querySelectorAll('.site-navbar a');
+    
+    // load all event listners
+    allEventListners();
+    
+    // functions of all event listners
+    function allEventListners() {
+      // toggler icon click event
+    navToggler.addEventListener('click', togglerClick);
+      // nav links click event
+    navLinks.forEach( elem => elem.addEventListener('click', navLinkClick));
+    }
+    
+    // togglerClick function
+    function togglerClick() {
+    navToggler.classList.toggle('toggler-open');
+    navMenu.classList.toggle('open');
+    }
+    
+    // navLinkClick function
+    function navLinkClick() {
+    if(navMenu.classList.contains('open')) {
+        navToggler.click();
+    }
+    }</script>
+    
+</header>
+
+<main class="main-productos">
+    <div class="profile-card" data-tilt data-tilt-max="3" data-tilt-speed="1000" data-tilt-glare data-tilt-max-glare="0.1"
+    data-tilt-full-page-listening>
+    <div class="profile-img">
+    <img src="./../img/jeff-bezos-ceo-amazon-300x185.webp">
+    </div>
+    <div class="profile-content">
+    <h3>Jobert Monasterio</h3>
+    <h5>Ceo Innovatia Solutions</h5>
+    </div>
+</div>
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js'></script>
+</main>
+
+<section id="footer">
+    <div class="main-footer">
+    <div class="logoinfo" data-aos="fade-up">
+        <h2>Innovatia Solutions</h2>
+        <div class="contact-details">
+        <h1>Contactos</h1>
+        <li>
+            <div class="fa fa-phone"></div><a href="tel:+56">+569 66758469</a>
+        </li>
+        <li>
+            <div class="fa fa-envelope"></div><a href="mailto:yourmail@gmail.com">InnovatiaSolutions@gmail.com</a>
+        </li>
+        </li>
+        </div>
+    </div>
+    <div class="com " data-aos="fade-up">
+        <h1>About</h1>
+        <ul>
+        <li><a href="./../index.html">Inicio</a></li>
+        <li><a href="./productos.html">Productos</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a href="./contactos.html">Contactos</a></li>
+        <li><a href="./ayuda.html">Ayuda</a></li>
+        </ul>
+    </div>
+    <div class="info" data-aos="fade-up">
+        <h1>Redes Sociales</h1>
+        <div class="sociallogos">
+        <div class="logobox">
+            <i></i>
+            <a href="#" class="fa-brands fa-facebook"></a>
+            <a href="#" class="fa-brands fa-linkedin"></a>
+            <a href="#" class="fa-brands fa-youtube"></a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer>©Innovatia Solutions 2024  todos los derechos reservados. </footer>
+</body>
+</html>
